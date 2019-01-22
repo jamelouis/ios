@@ -15,6 +15,7 @@
 		C0F190FC21F6C6D2003A2C5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F190FB21F6C6D2003A2C5B /* main.m */; };
 		C0F1910421F6DAA2003A2C5B /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F1910321F6DAA2003A2C5B /* GLKit.framework */; };
 		C0F1910621F6DAC7003A2C5B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F1910521F6DAC7003A2C5B /* OpenGLES.framework */; };
+		C0F1912B21F70600003A2C5B /* Editbox.mm in Sources */ = {isa = PBXBuildFile; fileRef = C0F1912A21F70600003A2C5B /* Editbox.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		C0F190FB21F6C6D2003A2C5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C0F1910321F6DAA2003A2C5B /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		C0F1910521F6DAC7003A2C5B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		C0F1912A21F70600003A2C5B /* Editbox.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = Editbox.mm; path = OpenGLES/Editbox.mm; sourceTree = SOURCE_ROOT; };
+		C0F1912C21F708E4003A2C5B /* Editbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Editbox.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +51,7 @@
 		C0F190E021F6C6D0003A2C5B = {
 			isa = PBXGroup;
 			children = (
+				C0F1912921F705CA003A2C5B /* common */,
 				C0F190EB21F6C6D0003A2C5B /* OpenGLES */,
 				C0F190EA21F6C6D0003A2C5B /* Products */,
 				C0F1910221F6DAA2003A2C5B /* Frameworks */,
@@ -85,6 +89,15 @@
 				C0F1910321F6DAA2003A2C5B /* GLKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0F1912921F705CA003A2C5B /* common */ = {
+			isa = PBXGroup;
+			children = (
+				C0F1912A21F70600003A2C5B /* Editbox.mm */,
+				C0F1912C21F708E4003A2C5B /* Editbox.h */,
+			);
+			path = common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +173,7 @@
 				C0F190F121F6C6D0003A2C5B /* ViewController.m in Sources */,
 				C0F190FC21F6C6D2003A2C5B /* main.m in Sources */,
 				C0F190EE21F6C6D0003A2C5B /* AppDelegate.m in Sources */,
+				C0F1912B21F70600003A2C5B /* Editbox.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

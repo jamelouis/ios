@@ -17,6 +17,15 @@
                     <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="Prm-N1-XTk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="TextView" translatesAutoresizingMaskIntoConstraints="NO" id="Zb6-pP-bGr">
+                                <rect key="frame" x="67" y="78" width="240" height="142"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="cd2-zb-lO6"/>
                         <connections>
                             <outlet property="delegate" destination="1KX-dp-UO6" id="Hle-BJ-XKY"/>
@@ -25,7 +34,7 @@
                 </glkViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="74a-pR-9qc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-253" y="-32"/>
+            <point key="canvasLocation" x="-253.59999999999999" y="-32.833583208395808"/>
         </scene>
     </scenes>
 </document>
