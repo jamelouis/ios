@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <GLKit/GLKit.h>
+#import "editbox.h"
 
-@interface ViewController : GLKViewController
+@interface ViewController : GLKViewController <EditboxViewDelegate>
 
 
 @end
