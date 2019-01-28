@@ -18,15 +18,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" id="Hkz-z4-0CI">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="ItemCell" id="Hkz-z4-0CI">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hkz-z4-0CI" id="kXU-fB-uRD">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="307" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fb5-Hb-Uzb">
-                                            <rect key="frame" x="16" y="11" width="343" height="22"/>
+                                            <rect key="frame" x="16" y="11" width="283" height="22"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -39,6 +39,9 @@
                                         <constraint firstItem="fb5-Hb-Uzb" firstAttribute="top" secondItem="kXU-fB-uRD" secondAttribute="topMargin" id="vBk-8L-7P5"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="2Ta-AZ-qhO" kind="presentation" identifier="Edit Item" trigger="accessoryAction" id="JIq-AU-qBW"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -49,7 +52,7 @@
                     <navigationItem key="navigationItem" title="Show Items" id="bVw-qn-es2">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="PGI-em-fEb">
                             <connections>
-                                <segue destination="2Ta-AZ-qhO" kind="presentation" id="O5n-cR-rrr"/>
+                                <segue destination="2Ta-AZ-qhO" kind="presentation" identifier="Add Item" id="O5n-cR-rrr"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -61,7 +64,7 @@
         <!--Add Item-->
         <scene sceneID="peW-kL-OaL">
             <objects>
-                <tableViewController id="J0b-Ld-vd6" sceneMemberID="viewController">
+                <tableViewController id="J0b-Ld-vd6" customClass="ItemDetailViewController" customModule="table_view" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="kRa-H7-Rrt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,9 +103,20 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Add Item" id="xCJ-zE-8e9">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="3ev-RL-LlN"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="bi8-XM-11I"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="3ev-RL-LlN">
+                            <connections>
+                                <action selector="cancel:" destination="J0b-Ld-vd6" id="Psi-b9-Scw"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="bi8-XM-11I">
+                            <connections>
+                                <action selector="done:" destination="J0b-Ld-vd6" id="gBk-kB-gAK"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="textField" destination="y7t-wv-Jy6" id="3q7-tj-QoU"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZwM-kp-juF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -145,4 +159,7 @@
             <point key="canvasLocation" x="1872.8" y="-11.244377811094454"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="JIq-AU-qBW"/>
+    </inferredMetricsTieBreakers>
 </document>

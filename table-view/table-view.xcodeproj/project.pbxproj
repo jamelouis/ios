@@ -12,6 +12,8 @@
 		C0ACAB3221FEE41B0001F278 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0ACAB3021FEE41B0001F278 /* Main.storyboard */; };
 		C0ACAB3421FEE41C0001F278 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0ACAB3321FEE41C0001F278 /* Assets.xcassets */; };
 		C0ACAB3721FEE41C0001F278 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0ACAB3521FEE41C0001F278 /* LaunchScreen.storyboard */; };
+		C0ACAB3F21FEEEFF0001F278 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ACAB3E21FEEEFF0001F278 /* ItemDetailViewController.swift */; };
+		C0ACAB4721FEFFDD0001F278 /* ItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ACAB4621FEFFDD0001F278 /* ItemList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		C0ACAB3321FEE41C0001F278 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0ACAB3621FEE41C0001F278 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0ACAB3821FEE41C0001F278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0ACAB3E21FEEEFF0001F278 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
+		C0ACAB4621FEFFDD0001F278 /* ItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				C0ACAB3321FEE41C0001F278 /* Assets.xcassets */,
 				C0ACAB3521FEE41C0001F278 /* LaunchScreen.storyboard */,
 				C0ACAB3821FEE41C0001F278 /* Info.plist */,
+				C0ACAB3E21FEEEFF0001F278 /* ItemDetailViewController.swift */,
+				C0ACAB4621FEFFDD0001F278 /* ItemList.swift */,
 			);
 			path = "table-view";
 			sourceTree = "<group>";
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0ACAB4721FEFFDD0001F278 /* ItemList.swift in Sources */,
 				C0ACAB2F21FEE41B0001F278 /* ViewController.swift in Sources */,
 				C0ACAB2D21FEE41B0001F278 /* AppDelegate.swift in Sources */,
+				C0ACAB3F21FEEEFF0001F278 /* ItemDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
